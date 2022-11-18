@@ -1,0 +1,51 @@
+Problema 5:
+
+1 Inicio
+
+Algoritmo
+
+1 Inicio
+2 Se pide el numero de litros de agua consumidos al mes
+3 Se pide el costo por litro 
+4 Se multiplica el numero de litros consumidos en el mes por el costo de cada litro
+5 Se presenta en pantalla el costo mensual consumidos
+6 Se pide el numero de minutos de telefono que el usuario uso en el mes
+7 Se multiplica el munero de minutos consumidos por el valor por minuto de telefono
+8 Se presenta en pantalla el costo mensual de telefono
+9 Se pide la edad del usario 
+10 Si el usuario es menor a 20 anos entonces se otorga el 20% del valor total
+11 Caso contrario si el usuario tiene edad mayo a 20 entonces no se otroga el descuento
+12 Fin
+
+Miniespecificacion:
+ 
+1 Inicio 
+2 numerolitos, i[0-n]
+3 costolitro, d[0-n]
+4 minutosconsumidos, i[0-n]
+5 costominuto, d[0-n]
+6 edad, i[0-n]
+7 descuento, d[0-n] //depende de la edad
+8 totalmensual, d[0-n]
+9 <<"Ingresar el numero de litros consumidos al mes"
+10 >>numerolitros
+11 <<"Ingresar el valor por litro de agua"
+12 >>costolitro
+13 <<"Ingrese el numero de minutos consumidos al mes"
+14 >>minutosconsumidos
+15 <<"Ingrese el costo por minuto de telefono"
+16 >>costominuto
+16 aguamensual <-- numerolitos * costolitos
+17 telefonomensual <-- numerominutos * costominuto
+18 <<"Ingrese edad del usuario"
+19 >>edad
+20 si edad < 20 entonces 
+21 descuento <-- aguamensual + telefonomensual * 0.20
+22 totalmesual <-- aguamensual + telefonomensual - descuento
+23 de lo contrario
+24 si edad > 20
+25 totalmensual <-- aguamensual+telefonomensual
+26 fin si
+27 <<"El valor total mensual a pagar es:" +totalmensual
+28 Fin
+

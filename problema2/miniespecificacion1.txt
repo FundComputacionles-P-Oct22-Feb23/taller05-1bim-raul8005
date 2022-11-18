@@ -1,0 +1,20 @@
+Problema 2:
+
+1 Inicio
+2 costopedido, d[0-n]
+3 cantidadpedido, i[0-n]
+4 preciounitario, d[0-n]
+5 descuento <-- 0.15 //15%
+6 <<"Ingrese el costo del pedido"
+7 >>costopedido
+8 <<"Ingrese la cantidad del pedido"
+9 >>cantidadpedido
+10 <<"Ingrese el precio unitario del producto"
+11 >>preciounitario
+12 costopedido <-- cantidadpedido * preciounitario
+13 si cantidadpedido > 50 unidades entonces
+14 valordescuento <-- costopedido * descuento 
+15 costopedido <-- costopedido - valordescuento
+16 fin si
+17 <<"El costo total del pedido es:" +costopedido
+18 Fin

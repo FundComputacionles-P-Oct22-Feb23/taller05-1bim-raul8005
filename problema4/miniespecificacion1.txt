@@ -1,0 +1,32 @@
+Problema 4:
+
+1 Inicio
+2 numerodias, d[0-n]
+3 preciodiario, d[0-n]
+4 subtotalapagar, d[0-n]
+5 pagartotal, d[0-n]
+6 descuento1 <-- 0.10
+7 descuento2 <-- 0.15
+8 descuento3 <-- 0.20
+9 <<"Ingrese el numero de dias  que el usuario se hospeda"
+10 >>numerodias
+11 <<"Ingresar el valor diario de la habitacion"
+12 >>preciodiario
+13 subtotalapagar <-- numerodias * preciodiario
+14 si numerodias > 5 dias entones
+15 valordedescuento <-- subtotalapagar * descuento1
+16 pagartotal <-- subtotalapagar - valordedescuento
+17 de lo contrario
+18 si numerodias > 10 dias entonces
+19 valordedescuento <-- subtotalapagar * descuento2
+20 pagartotal <-- subtotalapagar - valordedescuento
+21 de lo contrario
+22 si numero dias > 15 dias entonces
+23 valordedescuento <-- subtotalapagar * descuento3
+24 pagartotal <-- subtotalapagar - valordedescuento
+25 fin si
+26 fin si
+27 <<"subtotal a pagar:" +subtotalapagar
+28 <<"Decuento:" +valordedescuento
+29 <<"El valor total a pagar es:" +pagartotal
+30 fin
